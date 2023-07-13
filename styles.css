@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+body, div, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caprasimo', cursive;
+}
+
+:root {
+    --header-background-color : #cdb4db;
+    --main-background-color: #ffc8dd;
+    --font-color: #fefae0;
+    --box-color: #ffafcc;
+    --box-hover-color: #ffdbe8;
+}
+
+h1 {
+    text-align: center;
+    height: 10vh;
+    letter-spacing: 4px;
+
+}
+
+.msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 5rem;
+    padding-top: 10px;
+    font-weight: 100;
+    color: var(--font-color);
+    background-color: var(--header-background-color);
+
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    padding-top: 50px;
+}
+
+.main {
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: var(--main-background-color);
+}
+
+.board {
+    margin: 0 auto;
+    display: grid;
+    height: 456px;
+    width: 456px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.board .box {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    background-color: var(--box-color);
+}
+
+.footer {
+    height: 5vh;
+    background-color: var(--header-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: var(--box-hover-color);
+    cursor: pointer;
+}
+
