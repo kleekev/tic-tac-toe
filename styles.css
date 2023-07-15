@@ -125,6 +125,7 @@ img {
     .header h1 {
         font-size: 3rem;
         width: 100vw;
+        padding-bottom: 3rem;
     }
     .header {
         display: flex;
